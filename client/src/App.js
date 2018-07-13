@@ -91,7 +91,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Route exact path="/signup" component = {() => <Signup liftToken={this.liftTokenToState} />} />
-            <Login liftToken={this.liftTokenToState} />
+            <Route exact path="/login" component = {() => <Login liftToken={this.liftTokenToState} />} />
           </div>
         </Router>
       )
